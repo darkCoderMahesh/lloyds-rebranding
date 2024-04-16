@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=728,height=90">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      var clickTag = "https://www.lloydsbank.com/";
+    </script>
+</head>
+<body onload="window.init()">
+    
+    <div id="main">
+        <img src="images/horse_static.svg" class="horse_static" id="horse" alt="">
+        <img src="images/logo_text.svg" class="logo_text" alt="">
+        <img src="images/horse_gif.gif" class="horse_gif hidden" id="horse_gif" alt="">
+        <div class="content">
+            <div class="copy">
+              <span id="text1" class="hidden">Grow your business idea with our</span><br>
+              <span id="text2" class="hidden">Business Account</span>
+            </div> 
+        </div>
+        <div id="cta" class="hidden">
+          <span>
+            <svg id="search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8.234" height="8.235" viewBox="0 0 8.234 8.235">
+              <defs>
+                <clipPath id="clip-path">
+                  <path id="Path_435" data-name="Path 435" d="M0-15.217H8.234v-8.235H0Z" transform="translate(0 23.452)"/>
+                </clipPath>
+              </defs>
+              <g id="Group_498" data-name="Group 498" transform="translate(0 0)">
+                <g id="Group_495" data-name="Group 495" transform="translate(5.096 5.096)">
+                  <path id="Path_433" data-name="Path 433" d="M0-.871,2.667,1.8l.472-.472L.471-1.342Z" transform="translate(0 1.342)"/>
+                </g>
+                <g id="Group_497" data-name="Group 497" clip-path="url(#clip-path)">
+                  <g id="Group_496" data-name="Group 496" transform="translate(0 0)">
+                    <path id="Path_434" data-name="Path 434" d="M-6.158-12.317A3.336,3.336,0,0,1-9.491-15.65a3.336,3.336,0,0,1,3.333-3.333A3.337,3.337,0,0,1-2.825-15.65a3.337,3.337,0,0,1-3.333,3.333m0-6A2.67,2.67,0,0,0-8.825-15.65a2.67,2.67,0,0,0,2.667,2.666A2.67,2.67,0,0,0-3.492-15.65a2.669,2.669,0,0,0-2.666-2.667" transform="translate(9.491 18.983)" />
+                  </g>
+                </g>
+              </g>
+            </svg>          
+             Find out more</span>
+       </div>
+        <div id="bgExit"></div>
+    </div>
+    
+    <script>
+        var clickArea = document.getElementById("main");
+        clickArea.onclick = function () {
+          window.open(clickTag, "_blank");
+        };
+    </script>
+</body>
+</html>
