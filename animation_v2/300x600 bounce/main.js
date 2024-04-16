@@ -51,7 +51,7 @@ function animate() {
     //   y: -30, 
     //   ease: 'bounce.out',
     //   opacity: 0,
-    //   delay: 2, 
+    //   delay: 4, 
     //   onComplete: () => {
     //     gsap.to(cta, {
     //       duration: 1,
@@ -62,8 +62,8 @@ function animate() {
     //   }
     // });
 
-  tl.to(cta, 0.5, {autoAlpha:1, ease: "power2.inOut"},"2");
-  tl.to(horse, 0.5, {autoAlpha:0, ease: "power2.inOut"},"3");
+  tl.to(cta, 0.5, {autoAlpha:1, ease: "power2.inOut"},"4");
+  tl.to(horse, 0.5, {autoAlpha:0, ease: "power2.inOut"},"5");
   tl.to(horse_gif, 0.5, {autoAlpha:1, ease: "power2.inOut"},"<");
 
 }
