@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'GTUltra-regular';
+  src: url(fonts/subset-GTUltra-Regular.woff);
+}
+@font-face {
+    font-family: 'GTUltraMedian-black';
+    src: url(fonts/subset-GTUltraMedian-Black.woff);
+  }
+
+sup, sub {
+    font-size: 50%;
+  }
+  
+  html, body, * {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #main {
+    position:relative;
+    left:0px;
+    top:0px;
+    width:300px;
+    height:600px;
+    border:1px solid #000000;
+    box-sizing: border-box;
+    overflow:hidden;
+  }
+  #bgExit {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width:300px;
+    height:600px;
+    cursor: pointer !important;
+    z-index: 100;
+  }
+  
+  .logo_text{
+    position: absolute;
+    top: 570.71px;
+    left: 108px;
+    z-index: 1;
+  }
+  .horse_static{
+    position: absolute;
+    top: 528.57px;
+    left: 130.94px;
+    z-index: 1;
+  }
+  .horse_gif{
+    position: absolute;
+    top: 522.92px;
+    left: 121.94px;
+    z-index: 1;
+    width: 58px;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  .content{
+    background-color: #6CF479;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 300px;
+    bottom: 0px;
+  }
+  .cover_image{
+    width: 300px;
+    height: 600px;
+  }
+  .copy{
+    width: 300px;
+    font-family: 'GTUltraMedian-black';
+    font-size: 31px;
+    line-height: 35px;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top: 320.29px;
+  }
+  
+  #cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 480.29px;
+    left: 86px;
+  }
+  #cta span{
+    font-family: 'GTUltra-regular';
+    width: 129px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+#cta span svg{
+  margin-right: 4px;
+}
