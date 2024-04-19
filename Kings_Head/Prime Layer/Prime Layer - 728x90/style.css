@@ -100,7 +100,6 @@ sup, sub {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
     background-color: #fff;
     border-radius: 4px;
     font-size: 11px;
