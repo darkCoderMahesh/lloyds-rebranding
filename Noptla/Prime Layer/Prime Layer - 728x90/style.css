@@ -59,7 +59,7 @@ sup, sub {
 
   .hidden{
     visibility: hidden;
-    opacity: 0;
+    /* opacity: 0; */
   }
   .content{
     background-color: #6CF479;
@@ -100,7 +100,6 @@ sup, sub {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
     background-color: #fff;
     border-radius: 4px;
     font-size: 11px;
@@ -108,13 +107,6 @@ sup, sub {
 #cta span:hover svg{
   fill:#fff;
 }
-.small_text{
-    font-family: 'GTUltra-Light';
-    color: #fff;
-    font-size: 6px;
-    text-align: left;
-    top: 6px;
-    left: 8px;
-    position: absolute;
-    line-height: 9px;
+#cta span svg{
+    margin-right: 4px;
 }

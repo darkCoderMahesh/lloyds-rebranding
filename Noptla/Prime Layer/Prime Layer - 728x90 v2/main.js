@@ -29,25 +29,25 @@ function animate() {
   // Define the bounce animation for each text element
   
   texts.forEach((text, index) => {
-    gsap.from(text, {
-        duration: 1,
+    gsap.from(text, 0.5,{
+        // duration: 1,
         y: -15, 
         ease: 'bounce.out',
-        opacity: 0,
+        autoAlpha: 0,
         delay: index * 1.5, 
         onComplete: () => {
-          gsap.to(text, {
-            duration: 1,
+          gsap.to(text, 0.5, {
+            // duration: 1,
             y: 0,
             ease: 'bounce.out',
-            opacity: 1
+            autoAlpha: 1
           });
         }
-      });
+      }, "1");
     });
-  tl.to(cta, 0.5, {autoAlpha:1, ease: "power2.inOut"},"3");
-  tl.to(horse, 0.5, {autoAlpha:0, ease: "power2.inOut"},"3.3");
-  tl.to(horse_gif, 0.5, {autoAlpha:1, ease: "power2.inOut"},"<");
+  tl.to(cta, 0.5, {autoAlpha:1, ease: "power2.inOut"},"3.8");
+  tl.to(horse, {autoAlpha:0,},"4");
+  tl.to(horse_gif, {autoAlpha:1,},"<");
 
 }
 

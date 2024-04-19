@@ -57,7 +57,7 @@ sup, sub {
 
   .hidden{
     visibility: hidden;
-    opacity: 0;
+    /* opacity: 0; */
   }
   .content{
     background-color: #6CF479;
@@ -101,10 +101,12 @@ sup, sub {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
     background-color: #fff;
     border-radius: 4px;
     font-size: 14px;
+}
+#cta span svg{
+  margin-right: 4px;
 }
 #dis{
   font-size: 10px;

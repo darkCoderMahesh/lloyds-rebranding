@@ -57,7 +57,7 @@ sup, sub {
 
   .hidden{
     visibility: hidden;
-    opacity: 0;
+    /* opacity: 0; */
   }
   .content{
     background-color: #6CF479;
@@ -97,18 +97,10 @@ sup, sub {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
     background-color: #fff;
     border-radius: 4px;
     font-size: 14px;
 }
-.small_text{
-    font-family: 'GTUltra-Light';
-    color: #fff;
-    font-size: 5px;
-    text-align: left;
-    top: 8px;
-    left: 8px;
-    position: absolute;
-    line-height: 7px;
+#cta span svg{
+  margin-right: 4px;
 }
