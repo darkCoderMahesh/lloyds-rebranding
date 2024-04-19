@@ -58,7 +58,6 @@ sup, sub {
   }
   .hidden{
     visibility: hidden;
-    opacity: 0;
   }
   .content{
     background-color: #6CF479;
