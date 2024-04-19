@@ -33,14 +33,14 @@ function animate() {
         duration: 1,
         y: -15, 
         ease: 'bounce.out',
-        opacity: 0,
+        autoAlpha: 0,
         delay: index * 1.5, 
         onComplete: () => {
           gsap.to(text, {
             duration: 1,
             y: 0,
             ease: 'bounce.out',
-            opacity: 1
+            autoAlpha: 1
           });
         }
       });
