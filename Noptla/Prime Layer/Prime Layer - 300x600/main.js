@@ -23,30 +23,31 @@ function init() {
 
 function animate() {
   tl.set(["#main"], { autoAlpha: 1, force3D: true });
+  
   // Target the text elements
   const texts = document.querySelectorAll('.text');
   // Define the bounce animation for each text element
   
   texts.forEach((text, index) => {
-    gsap.from(text, 0.5,{
-        // duration: 1,
+    gsap.from(text, {
+        duration: 1,
         y: -15, 
         ease: 'bounce.out',
-        autoAlpha: 0,
+        opacity: 0,
         delay: index * 1.5, 
         onComplete: () => {
-          gsap.to(text, 0.5, {
-            // duration: 1,
+          gsap.to(text, {
+            duration: 1,
             y: 0,
             ease: 'bounce.out',
-            autoAlpha: 1
+            opacity: 1
           });
         }
-      }, "1");
+      });
     });
-  tl.to(cta, 0.5, {autoAlpha:1, ease: "power2.inOut"},"3.8");
-  tl.to(horse, {autoAlpha:0,},"4");
-  tl.to(horse_gif, {autoAlpha:1,},"<");
+  tl.to(cta, 0.5, {autoAlpha:1, ease: "power2.inOut"},"3");
+  tl.to(horse, 0.5, {autoAlpha:0, ease: "power2.inOut"},"3.3");
+  tl.to(horse_gif, 0.5, {autoAlpha:1, ease: "power2.inOut"},"<");
 
 }
 

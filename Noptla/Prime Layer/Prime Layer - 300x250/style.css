@@ -58,7 +58,7 @@ sup, sub {
 
   .hidden{
     visibility: hidden;
-    /* opacity: 0; */
+    opacity: 0;
   }
   .content{
     background-color: #6CF479;
@@ -73,7 +73,7 @@ sup, sub {
     width: 300px;
     height: 250px;
   }
-  .copy{
+  .text{
     font-family: 'GTUltraMedian-black';
     line-height: 20px;
     font-size: 18px;
@@ -82,7 +82,12 @@ sup, sub {
     text-align: center;
     right: 0px;
     z-index: 1;
+  }
+  #text1{
     top: 29px;
+  }
+  #text2{
+    top: 71px;
   }
   #cta{
     display: flex;
@@ -99,12 +104,10 @@ sup, sub {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4px;
     background-color: #fff;
     border-radius: 4px;
     font-size: 10px;
-}
-#cta span svg{
-  margin-right: 4px;
 }
 #dis{
   font-size: 10px;
