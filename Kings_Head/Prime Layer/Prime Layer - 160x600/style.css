@@ -57,7 +57,7 @@ sup, sub {
 
   .hidden{
     visibility: hidden;
-    /* opacity: 0; */
+    opacity: 0;
   }
   .content{
     background-color: #6CF479;
@@ -74,20 +74,20 @@ sup, sub {
   }
   .copy{
     width: 160px;
-    text-align: center;
     font-family: 'GTUltraMedian-black';
     line-height: 30px;
     font-size: 26px;
     position: absolute;
-    z-index: 1;
     top: 321px;
+    z-index: 1;
+    text-align: center;
   }
   #cta{
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 466px;
+    top: 471px;
     left: 15.5px;
   }
   #cta span{
@@ -97,10 +97,18 @@ sup, sub {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4px;
     background-color: #fff;
     border-radius: 4px;
     font-size: 14px;
 }
-#cta span svg{
-  margin-right: 4px;
+.small_text{
+    font-family: 'GTUltra-Light';
+    color: #fff;
+    font-size: 5px;
+    text-align: left;
+    top: 8px;
+    left: 8px;
+    position: absolute;
+    line-height: 7px;
 }
